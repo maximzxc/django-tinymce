@@ -8,7 +8,7 @@ urlpatterns = patterns('')
 
 if getattr(settings, 'TINYMCE_FILEBROWSER', False):
     urlpatterns += patterns('',
-        (r'^admin/filebrowser/', include(site.urls)),
+        (r'^admin/filebrowser/', include(admin.site.urls)),
     )
 
 urlpatterns += patterns('',
